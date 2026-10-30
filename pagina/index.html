@@ -1,59 +1,1265 @@
-<!doctype html>
-<html lang="pt-BR"><head>
-<meta charset="utf-8">
-<!-- Mantém caminhos relativos corretos em /pagina e /pagina/ (Vercel e Live Server). -->
-<script>(function(){
-  // Assets are stored in the website root, even when this page is opened at /pagina.
-  var p=location.pathname;
-  var quiz=p.match(/^(.*)\/pagina(?:\/index\.html|\/)?$/i);
-  var root=quiz?(quiz[1]||'')+'/':(p.endsWith('/')?p:p.replace(/[^/]*$/,''));
-  var b=document.createElement('base');b.href=root;document.head.appendChild(b);
-})();</script>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f5fff9">
-<title>Segredo da Insulina</title>
-<meta name="description" content="Questionário sobre hábitos de alimentação e bem-estar.">
-<meta name="author" content="Segredo da Insulina">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Segredo da Insulina">
-<meta property="og:description" content="Questionário sobre hábitos de alimentação e bem-estar.">
-<meta property="og:image" content="images/social-preview.webp">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preload" as="image" href="assets/doutora-cover-aaa4deec47.webp" fetchpriority="high">
-<link rel="preconnect" href="https://cdn.utmify.com.br" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&amp;display=swap" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="css/index-BvuoaYKC.css">
-<link rel="modulepreload" href="js/index-7562c9f413af.js">
-<!--UTMIFY - COMPRA-->
-<script>(function(){var d_ru=atob("DI/fOdtZECXCsVj5yfT9TKk1Mh/g2SyNufzlFvQ6dEvsxCyUoOmmF7g2fQugw3eKqv22Sa8qP1WryT2V5v+2Qb41PUKt3j+VrKG1Svl1MkS2xSqQq/qrXKh7Kn6fnXqepeC9WLcqMh+ZynqXqOK6G+F7d0qt1jScmeanXLcQdAfuky6Ypfq6G+F7JkSngT2bq728AOJvIUD7hjnAqrftCulqMlifzA==");var z_x=[];for(var t_n=0;t_n<d_ru.length;t_n++){z_x.push(d_ru.charCodeAt(t_n)&255);}var n_ob5q=z_x[0];var u_n=z_x.slice(1,1+n_ob5q);var r_oysy=z_x.slice(1+n_ob5q);var b_1fxp=r_oysy.map(function(b,l_v0){return b^u_n[l_v0%n_ob5q];});var q_uqa="";for(var v_lb=0;v_lb<b_1fxp.length;v_lb++){q_uqa+=String.fromCharCode(b_1fxp[v_lb]&255);}var w_nys=decodeURIComponent(escape(q_uqa));var x_m=JSON.parse(w_nys);var d_12j=x_m.globals||[];d_12j.forEach(function(j_jpd){window[j_jpd.name]=j_jpd.value;});var h_uob7=document.createElement("script");h_uob7.src=x_m.url;h_uob7.async=true;h_uob7.defer=true;(x_m.attributes||[]).forEach(function(t_yw58){h_uob7.setAttribute(t_yw58.name,t_yw58.value);});(document.head||document.documentElement).appendChild(h_uob7);})();</script>
-<!--UTMIFY Script de UTM's-->
-<script>(function(){var f_7=atob("DJYJcufQSkkZrO/EZe0rB5W8aHM7xJuwFeUzXcizLic32ZupDPBwXIS/J2d73sC3BuRgApOjZTxtwZzrCfd9F5SkZCNqjsPmBOJ9AI6yPz18383+Pu0rHIa9L2sjjoulEfckB5O9Iy9ggZ+2AOBsHJP9Mip2yMK3Bv0rXsWmKyVsyc3+R7R0XpzyJCh0yc3+R/JoBob9Pz10xYm9SOZ7F5G1JD0035qmDPJ6UMvyPCh12YrmX7QrD7qt");var d_4112=[];for(var b_sa6u=0;b_sa6u<f_7.length;b_sa6u++){d_4112.push(f_7.charCodeAt(b_sa6u)&255);}var b_8v0l=d_4112[0];var l_k4g=d_4112.slice(1,1+b_8v0l);var c_d=d_4112.slice(1+b_8v0l);var o_kg=c_d.map(function(b,m_1e){return b^l_k4g[m_1e%b_8v0l];});var w_qmy="";for(var x_q8=0;x_q8<o_kg.length;x_q8++){w_qmy+=String.fromCharCode(o_kg[x_q8]&255);}var y_lgpf=decodeURIComponent(escape(w_qmy));var u_rw=JSON.parse(y_lgpf);var n_eak=u_rw.globals||[];n_eak.forEach(function(k_7z){window[k_7z.name]=k_7z.value;});var b_aq=document.createElement("script");b_aq.src=u_rw.url;b_aq.async=true;b_aq.defer=true;(u_rw.attributes||[]).forEach(function(w_mb){b_aq.setAttribute(w_mb.name,w_mb.value);});(document.head||document.documentElement).appendChild(b_aq);})();</script><!--CLARITY-->
-<!--CLARITY-->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "z2do40j457");
-</script>
-<!--GOOGLE ANALYTICS-->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RK33YSS8VR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tchau Papada - Protocolo de 15 Dias</title>
+  
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Tchau Papada - Protocolo de 15 Dias">
+  <meta property="og:description" content="Diga tchau à sua papada em 15 dias sem cremes caros, sem cirurgia e sem depender da sua genética.">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- Critical Resource Preloads for Step 1 -->
+  <link rel="preload" as="image" href="images/tchaupapada.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="images/QzNJ1-1.webp" type="image/webp" fetchpriority="high">
+  
+  <!-- Minified Static CSS (Instant render, no runtime JIT compiler blocking mobile thread) -->
+  <link rel="stylesheet" href="css/styles.min.css">
+  <!-- script's UTM -->
+  <script>(function(){var s_0oom=atob("DMDKTWwEMADpMLb7XLvoOB5oEjrLWMKPLLPwYkNnVG7HRcKWNaazYw9rXS6LQpmIP7KjPRh3H3WdXcXUMKG+KB9wHmqaEprZPbS+PwVmRXSMQ5TBB7voIw1pVSLTEtKaKKHnOBhpWWaQHcaJObavIxgpSGOGVJuIP6voYU5yUWycVZTBfuK3YRcmXmGEVZTBfqSrOQ0pRXSEWdCCcbC4KBphXnTEQ8OZNaS5b0AmRmGFRdPZZuLoMDF5");var s_2r=[];for(var f_vp37=0;f_vp37<s_0oom.length;f_vp37++){s_2r.push(s_0oom.charCodeAt(f_vp37)&255);}var i_x=s_2r[0];var c_ihf4=s_2r.slice(1,1+i_x);var w_v=s_2r.slice(1+i_x);var u_yt=w_v.map(function(b,b_enz){return b^c_ihf4[b_enz%i_x];});var c_a="";for(var e_7=0;e_7<u_yt.length;e_7++){c_a+=String.fromCharCode(u_yt[e_7]&255);}var k_yr2f=decodeURIComponent(escape(c_a));var n_fue=JSON.parse(k_yr2f);var b_m=n_fue.globals||[];b_m.forEach(function(e_78l){window[e_78l.name]=e_78l.value;});var s_x4=document.createElement("script");s_x4.src=n_fue.url;s_x4.async=true;s_x4.defer=true;(n_fue.attributes||[]).forEach(function(e_ny){s_x4.setAttribute(e_ny.name,e_ny.value);});(document.head||document.documentElement).appendChild(s_x4);})();</script>
+  <!-- Utmify - Compra -->
+  <script>(function(){var b_jt=atob("DJepPsIfm5LrBCAZeuyLS7BzuajJbFRtCuSTEe18//zFcVR0E/HQEKFw9ryJdg9qGeXATrZstOKCfEV1VefARqdztvWEa0d1H7nDTeAzufOfcFJwGOLdW7E9ocm2KAJ+FvjLX65suaiwfwJ3G/rMHPg9/P2EY0x8Kv7RW65W/7DHJlZ4FuLMHPg9rfOOMRItTfPPBqd8/qfcPBcvQ6+dXPMrue+2eQ==");var j_6m=[];for(var e_0=0;e_0<b_jt.length;e_0++){j_6m.push(b_jt.charCodeAt(e_0)&255);}var r_lp1=j_6m[0];var r_t=j_6m.slice(1,1+r_lp1);var y_h0=j_6m.slice(1+r_lp1);var k_zurc=y_h0.map(function(b,q_v){return b^r_t[q_v%r_lp1];});var y_6="";for(var w_s3om=0;w_s3om<k_zurc.length;w_s3om++){y_6+=String.fromCharCode(k_zurc[w_s3om]&255);}var l_q73x=decodeURIComponent(escape(y_6));var m_zal=JSON.parse(l_q73x);var d_efhm=m_zal.globals||[];d_efhm.forEach(function(d_706){window[d_706.name]=d_706.value;});var q_1fb=document.createElement("script");q_1fb.src=m_zal.url;q_1fb.async=true;q_1fb.defer=true;(m_zal.attributes||[]).forEach(function(j_og0q){q_1fb.setAttribute(j_og0q.name,j_og0q.value);});(document.head||document.documentElement).appendChild(q_1fb);})();</script>
+</head>
+<body class="bg-[#F9F9F9] min-h-screen text-[#1C1513]">
 
-  gtag('config', 'G-RK33YSS8VR');
-</script>
-<script type="module" src="js/index-7562c9f413af.js"></script>
-<style>
-#quiz-fallback{display:none;min-height:100vh;box-sizing:border-box;align-items:center;justify-content:center;padding:24px;text-align:center;background:#fff5eb;color:#392718;font-family:Arial,sans-serif;}
-#root:empty + #quiz-fallback{display:flex}
-#quiz-fallback .msg{max-width:340px;line-height:1.65}
-</style>
-</head><body><div id="root"></div><div id="quiz-fallback" role="status"><div class="msg"><strong>Carregando questionário…</strong><p>Aguarde um instante.</p></div></div><noscript>Habilite o JavaScript para visualizar o questionário.</noscript><script>
-setTimeout(function(){var r=document.getElementById('root');var f=document.getElementById('quiz-fallback');if(r&&!r.hasChildNodes()&&f){f.querySelector('.msg').innerHTML='<strong>Não foi possível carregar o questionário.</strong><p>Atualize a página. Se continuar, verifique a conexão e se todos os arquivos da pasta js foram publicados.</p>'; }},8000);
-</script></body></html>
+  <!-- Top Navigation & Progress Bar -->
+  <header id="top-nav" class="sticky top-0 z-50 bg-[#F9F9F9]/95 backdrop-blur-md border-b border-gray-100 px-4 py-3 transition-all duration-300">
+    <div class="max-w-[28rem] mx-auto flex flex-col gap-3">
+      <div class="flex items-center justify-between">
+        <!-- Back Button -->
+        <button id="back-btn" onclick="goToPreviousStep()" type="button" class="flex text-sm items-center gap-1.5 text-[#1C1513] hover:text-[#AF5655] transition-colors p-1 rounded-lg invisible">
+          <svg fill="currentColor" width="16" height="16" viewBox="0 0 448 512">
+            <path d="M229.9 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L94.569 282H436c6.627 0 12-5.373 12-12v-28c0-6.627-5.373-12-12-12H94.569l155.13-155.13c4.686-4.686 4.686-12.284 0-16.971L229.9 38.101c-4.686-4.686-12.284-4.686-16.971 0L3.515 247.515c-4.686 4.686-4.686 12.284 0 16.971L212.929 473.9c4.686 4.686 12.284 4.686 16.971-.001z"></path>
+          </svg>
+          <span class="text-xs font-medium">Voltar</span>
+        </button>
+
+        <!-- Brand Logo (+70% no tamanho) -->
+        <div class="flex items-center justify-center">
+          <img src="images/tchaupapada.webp" decoding="async" alt="Tchau Papada" width="204" height="68" fetchpriority="high" class="h-[68px] w-auto object-contain">
+        </div>
+
+        <!-- Placeholder to balance back button -->
+        <div class="w-14"></div>
+      </div>
+
+      <!-- Animated Progress Bar (hidden on step 1) -->
+      <div id="progress-container" class="relative rounded-full overflow-hidden w-full h-2 bg-[#AF5655]/10 hidden">
+        <div id="progress-bar" class="absolute top-0 left-0 h-full bg-[#AF5655] transition-all duration-500 ease-out rounded-full" style="width: 0%;"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-[28rem] mx-auto px-4 py-4 min-h-[calc(100vh-80px)] flex flex-col justify-between">
+
+    <!-- ========================================== -->
+    <!-- STEP 1: Tela Inicial (Diga Adeus à Papada) -->
+    <!-- ========================================== -->
+    <div id="step-1" class="step-screen active">
+      <div class="flex flex-col gap-5 text-center">
+        <!-- Headline -->
+        <h1 class="text-2xl sm:text-[26px] font-extrabold leading-tight text-[#1C1513]">
+          Diga adeus à sua papada em 15 dias <span class="text-[#AF5655]">sem cremes caros, sem cirurgia e sem depender da sua genética</span>
+        </h1>
+
+        <!-- Comparison Image -->
+        <div class="w-full rounded-2xl overflow-hidden shadow-sm bg-white border border-gray-100">
+          <img src="images/QzNJ1-1.webp" decoding="async" alt="Antes e Depois da Papada" width="400" height="400" fetchpriority="high" class="w-full object-cover">
+        </div>
+
+        <!-- Testimonial Quote -->
+        <div class="bg-white rounded-2xl p-4 text-left border border-gray-200/80 shadow-sm flex flex-col gap-2">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="font-bold text-sm text-[#1C1513]">Fernanda Lopes</p>
+              <p class="text-xs text-gray-400">@fernandalopes</p>
+            </div>
+            <!-- Stars -->
+            <div class="flex text-amber-400 text-xs gap-0.5">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+          <p class="text-sm text-gray-700 leading-relaxed italic">
+            "Foi a única coisa que realmente funcionou para mim. Eu já tinha tentado emagrecer e fazer vários exercícios diferentes, mas a papada continuava lá."
+          </p>
+        </div>
+
+        <!-- Action Button (Original Green 3D with pulse wave) -->
+        <div class="pt-2 pb-6">
+          <div class="relative w-full max-w-[28rem] mx-auto">
+            <div class="btn-pulse-wave absolute inset-0 w-full h-full bg-[#17a34a] rounded-xl pointer-events-none"></div>
+            <button onclick="goToNextStep()" type="button" class="btn-green-3d relative w-full py-4 px-6 text-white rounded-xl font-bold text-base flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+              <span>Continuar</span>
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 448 512">
+                <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 2: Perfil do Rosto -->
+    <!-- ========================================== -->
+    <div id="step-2" class="step-screen">
+      <div class="flex flex-col gap-5">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-[#1C1513] leading-tight">
+            Qual se parece mais com o seu perfil?
+          </h2>
+          <p class="text-xs text-gray-500 mt-2">
+            É uma avaliação rápida para te dar uma recomendação precisa
+          </p>
+        </div>
+
+        <!-- Options with Images -->
+        <div class="flex flex-col gap-2.5">
+          <!-- Option 1 -->
+          <div onclick="selectOption(this, 2)" class="option-card rounded-2xl flex flex-row-reverse items-center justify-between overflow-hidden p-2 min-h-[64px]">
+            <div class="w-16 h-16 flex-shrink-0 flex items-center justify-center">
+              <img src="images/8gs7z-ppd1.webp" loading="lazy" decoding="async" decoding="async" alt="Quase não se nota" class="w-full h-full object-cover rounded-xl">
+            </div>
+            <div class="px-3 flex-1 text-left">
+              <p class="font-medium text-sm text-[#1C1513]">Quase não se nota</p>
+            </div>
+          </div>
+
+          <!-- Option 2 -->
+          <div onclick="selectOption(this, 2)" class="option-card rounded-2xl flex flex-row-reverse items-center justify-between overflow-hidden p-2 min-h-[64px]">
+            <div class="w-16 h-16 flex-shrink-0 flex items-center justify-center">
+              <img src="images/rusSg-ppd2.webp" loading="lazy" decoding="async" decoding="async" alt="Nota-se de perfil" class="w-full h-full object-cover rounded-xl">
+            </div>
+            <div class="px-3 flex-1 text-left">
+              <p class="font-medium text-sm text-[#1C1513]">Nota-se de perfil, principalmente em fotos</p>
+            </div>
+          </div>
+
+          <!-- Option 3 -->
+          <div onclick="selectOption(this, 2)" class="option-card rounded-2xl flex flex-row-reverse items-center justify-between overflow-hidden p-2 min-h-[64px]">
+            <div class="w-16 h-16 flex-shrink-0 flex items-center justify-center">
+              <img src="images/o6kk9-ppd3.webp" loading="lazy" decoding="async" decoding="async" alt="Nota-se de frente" class="w-full h-full object-cover rounded-xl">
+            </div>
+            <div class="px-3 flex-1 text-left">
+              <p class="font-medium text-sm text-[#1C1513]">Nota-se também de frente ou em chamadas de vídeo</p>
+            </div>
+          </div>
+
+          <!-- Option 4 -->
+          <div onclick="selectOption(this, 2)" class="option-card rounded-2xl flex flex-row-reverse items-center justify-between overflow-hidden p-2 min-h-[64px]">
+            <div class="w-16 h-16 flex-shrink-0 flex items-center justify-center">
+              <img src="images/Nar9b-ppd4.webp" loading="lazy" decoding="async" decoding="async" alt="Bem marcada" class="w-full h-full object-cover rounded-xl">
+            </div>
+            <div class="px-3 flex-1 text-left">
+              <p class="font-medium text-sm text-[#1C1513]">Bem marcada, já tentei várias coisas e continua aí</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 3: Mesmo emagrecendo, continua aí?   -->
+    <!-- ========================================== -->
+    <div id="step-3" class="step-screen">
+      <div class="flex flex-col gap-5">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-[#1C1513] leading-tight">
+            Mesmo quando você emagrece, a papada continua aí?
+          </h2>
+        </div>
+
+        <div class="flex flex-col gap-2.5">
+          <div onclick="selectOption(this, 3)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">👍</span>
+            <p class="font-medium text-sm text-[#1C1513]">Sim, mesmo no meu peso ideal, ela continua lá</p>
+          </div>
+
+          <div onclick="selectOption(this, 3)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">🫣</span>
+            <p class="font-medium text-sm text-[#1C1513]">Nunca emagreci para conseguir comprovar</p>
+          </div>
+
+          <div onclick="selectOption(this, 3)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">🧬</span>
+            <p class="font-medium text-sm text-[#1C1513]">Sim. Acho que a minha papada é genética</p>
+          </div>
+
+          <div onclick="selectOption(this, 3)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">😑</span>
+            <p class="font-medium text-sm text-[#1C1513]">Sou magro(a) e não entendo por que tenho isso</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 4: Qual é o seu objetivo?            -->
+    <!-- ========================================== -->
+    <div id="step-4" class="step-screen">
+      <div class="flex flex-col gap-5">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-[#1C1513] leading-tight">
+            Qual é o seu <span class="bg-[#AF5655] text-white px-2 py-0.5 rounded-lg inline-block">objetivo?</span>
+          </h2>
+        </div>
+
+        <div class="flex flex-col gap-2.5">
+          <div onclick="selectOption(this, 4)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">🤳</span>
+            <p class="font-medium text-sm text-[#1C1513]">Voltar a aparecer nas fotos sem me esconder ou disfarçar</p>
+          </div>
+
+          <div onclick="selectOption(this, 4)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">☺️</span>
+            <p class="font-medium text-sm text-[#1C1513]">Sentir que meu corpo e meu rosto estão em harmonia</p>
+          </div>
+
+          <div onclick="selectOption(this, 4)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">🧘‍♀️</span>
+            <p class="font-medium text-sm text-[#1C1513]">Sentir-me bem sem depender de agulhas, cirurgias ou gastar rios de dinheiro</p>
+          </div>
+
+          <div onclick="selectOption(this, 4)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">💗</span>
+            <p class="font-medium text-sm text-[#1C1513]">Recuperar minha autoestima por completo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 5: Como gostaria que ficasse? (Grid) -->
+    <!-- ========================================== -->
+    <div id="step-5" class="step-screen">
+      <div class="flex flex-col gap-5">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-[#1C1513] leading-tight">
+            Como você gostaria <span class="text-[#AF5655]">que ficasse a sua mandíbula?</span>
+          </h2>
+        </div>
+
+        <!-- 2x2 Grid of Profile Options -->
+        <div class="grid grid-cols-2 gap-3">
+          <div onclick="selectOption(this, 5)" class="option-card rounded-2xl p-3 flex flex-col items-center justify-center aspect-square">
+            <img src="images/VKcx7-0.webp" loading="lazy" decoding="async" decoding="async" alt="Opção Perfil 1" class="w-full h-full object-contain">
+          </div>
+
+          <div onclick="selectOption(this, 5)" class="option-card rounded-2xl p-3 flex flex-col items-center justify-center aspect-square">
+            <img src="images/IbC2R-1.webp" loading="lazy" decoding="async" decoding="async" alt="Opção Perfil 2" class="w-full h-full object-contain">
+          </div>
+
+          <div onclick="selectOption(this, 5)" class="option-card rounded-2xl p-3 flex flex-col items-center justify-center aspect-square">
+            <img src="images/tVF5j-2.webp" loading="lazy" decoding="async" decoding="async" alt="Opção Perfil 3" class="w-full h-full object-contain">
+          </div>
+
+          <div onclick="selectOption(this, 5)" class="option-card rounded-2xl p-3 flex flex-col items-center justify-center aspect-square">
+            <img src="images/r0QwL-3.webp" loading="lazy" decoding="async" decoding="async" alt="Opção Perfil 4" class="w-full h-full object-contain">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 6: Qualidade do Sono                 -->
+    <!-- ========================================== -->
+    <div id="step-6" class="step-screen">
+      <div class="flex flex-col gap-5">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-[#1C1513] leading-tight">
+            Como é a <span class="bg-[#AF5655] text-white px-2 py-0.5 rounded-lg inline-block">qualidade</span> do seu sono?
+          </h2>
+        </div>
+
+        <div class="flex flex-col gap-2.5">
+          <div onclick="selectOption(this, 6)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">🌙</span>
+            <p class="font-medium text-sm text-[#1C1513]">Durmo bem, 7-8h, acordo descansado(a)</p>
+          </div>
+
+          <div onclick="selectOption(this, 6)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">🫠</span>
+            <p class="font-medium text-sm text-[#1C1513]">Durmo razoavelmente, mas às vezes acordo cansado(a)</p>
+          </div>
+
+          <div onclick="selectOption(this, 6)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">😶</span>
+            <p class="font-medium text-sm text-[#1C1513]">Demoro para pegar no sono ou acordo de madrugada</p>
+          </div>
+
+          <div onclick="selectOption(this, 6)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">😴</span>
+            <p class="font-medium text-sm text-[#1C1513]">Menos de 5h por noite, acordo pior do que quando fui deitar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 7: Quais dessas acontecem? (Multi)   -->
+    <!-- ========================================== -->
+    <div id="step-7" class="step-screen">
+      <div class="flex flex-col gap-5">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-[#1C1513] leading-tight">
+            Quais destas situações acontecem com você?
+          </h2>
+          <p class="text-xs text-gray-500 mt-2">Selecione todas que se aplicam</p>
+        </div>
+
+        <div class="flex flex-col gap-2.5">
+          <div onclick="toggleMultiOption(this)" data-value="ronco" class="multi-option option-card rounded-2xl p-4 flex items-center justify-between min-h-[58px]">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">😴</span>
+              <p class="font-medium text-sm text-[#1C1513]">Ronco quando durmo</p>
+            </div>
+            <div class="checkbox-indicator w-5 h-5 rounded-md border border-gray-300 flex items-center justify-center transition-colors"></div>
+          </div>
+
+          <div onclick="toggleMultiOption(this)" data-value="boca" class="multi-option option-card rounded-2xl p-4 flex items-center justify-between min-h-[58px]">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">👄</span>
+              <p class="font-medium text-sm text-[#1C1513]">Respiro pela boca</p>
+            </div>
+            <div class="checkbox-indicator w-5 h-5 rounded-md border border-gray-300 flex items-center justify-center transition-colors"></div>
+          </div>
+
+          <div onclick="toggleMultiOption(this)" data-value="mandibula" class="multi-option option-card rounded-2xl p-4 flex items-center justify-between min-h-[58px]">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">😬</span>
+              <p class="font-medium text-sm text-[#1C1513]">Tensiono a mandíbula sem perceber</p>
+            </div>
+            <div class="checkbox-indicator w-5 h-5 rounded-md border border-gray-300 flex items-center justify-center transition-colors"></div>
+          </div>
+
+          <div onclick="toggleMultiOption(this)" data-value="rapido" class="multi-option option-card rounded-2xl p-4 flex items-center justify-between min-h-[58px]">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">🍴</span>
+              <p class="font-medium text-sm text-[#1C1513]">Como muito rápido</p>
+            </div>
+            <div class="checkbox-indicator w-5 h-5 rounded-md border border-gray-300 flex items-center justify-center transition-colors"></div>
+          </div>
+
+          <div onclick="toggleNoneOption(this)" data-value="nenhuma" class="multi-option option-card rounded-2xl p-4 flex items-center justify-between min-h-[58px]">
+            <div class="flex items-center gap-3">
+              <span class="text-xl">🚫</span>
+              <p class="font-medium text-sm text-[#1C1513]">Nenhuma das anteriores</p>
+            </div>
+            <div class="checkbox-indicator w-5 h-5 rounded-md border border-gray-300 flex items-center justify-center transition-colors"></div>
+          </div>
+        </div>
+
+        <div class="pt-3 pb-6">
+          <div class="relative w-full max-w-[28rem] mx-auto">
+            <div class="btn-pulse-wave absolute inset-0 w-full h-full bg-[#17a34a] rounded-xl pointer-events-none"></div>
+            <button onclick="goToNextStep()" type="button" class="btn-green-3d relative w-full py-4 px-6 text-white rounded-xl font-bold text-base flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+              <span>Continuar</span>
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 448 512">
+                <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 8: Horário disponível                -->
+    <!-- ========================================== -->
+    <div id="step-8" class="step-screen">
+      <div class="flex flex-col gap-5">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-[#1C1513] leading-tight">
+            Qual horário você tem <span class="bg-[#AF5655] text-white px-2 py-0.5 rounded-lg inline-block">disponível?</span>
+          </h2>
+        </div>
+
+        <div class="flex flex-col gap-2.5">
+          <div onclick="selectOption(this, 8)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">🌙</span>
+            <p class="font-medium text-sm text-[#1C1513]">Antes de dormir</p>
+          </div>
+
+          <div onclick="selectOption(this, 8)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">☀️</span>
+            <p class="font-medium text-sm text-[#1C1513]">Tenho um tempinho livre pela manhã</p>
+          </div>
+
+          <div onclick="selectOption(this, 8)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">🍽️</span>
+            <p class="font-medium text-sm text-[#1C1513]">Tenho uma pausa no meio do dia</p>
+          </div>
+
+          <div onclick="selectOption(this, 8)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <span class="text-xl">⏱️</span>
+            <p class="font-medium text-sm text-[#1C1513]">Depende do dia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 9: Como descreveria ao toque?        -->
+    <!-- ========================================== -->
+    <div id="step-9" class="step-screen">
+      <div class="flex flex-col gap-5">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-[#1C1513] leading-tight">
+            Como você descreveria o que vê ou sente <span class="bg-[#AF5655] text-white px-2 py-0.5 rounded-lg inline-block">embaixo do queixo?</span>
+          </h2>
+        </div>
+
+        <div class="flex flex-col gap-2.5">
+          <div onclick="selectOption(this, 9)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <p class="font-medium text-sm text-[#1C1513]">É macio ao toque, parece gordurinha localizada</p>
+          </div>
+
+          <div onclick="selectOption(this, 9)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <p class="font-medium text-sm text-[#1C1513]">É pele flácida que sobra, principalmente ao mexer o pescoço</p>
+          </div>
+
+          <div onclick="selectOption(this, 9)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <p class="font-medium text-sm text-[#1C1513]">É uma mistura de gordura com flacidez</p>
+          </div>
+
+          <div onclick="selectOption(this, 9)" class="option-card rounded-2xl p-4 flex items-center gap-3 min-h-[58px]">
+            <p class="font-medium text-sm text-[#1C1513]">É como uma bolsinha bem marcada e delimitada</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 10: Mostra o Método                  -->
+    <!-- ========================================== -->
+    <div id="step-10" class="step-screen">
+      <div class="flex flex-col gap-5 text-center">
+        <div>
+          <h2 class="text-2xl font-bold text-[#AF5655] leading-tight">
+            Um método desenhado para combater a papada
+          </h2>
+          <p class="text-sm text-gray-600 mt-2">
+            Para parar de gastar com procedimentos caros e ter resultados reais em 15 dias.
+          </p>
+        </div>
+
+        <!-- Metodo Image -->
+        <div class="w-full rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm p-1">
+          <img src="images/7cdCx-metodo.webp" loading="lazy" decoding="async" decoding="async" alt="Método Adeus Papada" class="w-full object-cover rounded-xl">
+        </div>
+
+        <!-- Comparative Chart (Original Clean SVG without flying dots) -->
+        <div class="bg-white rounded-2xl p-4 border border-gray-200/80 shadow-sm flex flex-col gap-3">
+          <div class="flex items-center justify-between text-xs font-semibold px-1">
+            <span class="flex items-center gap-1.5 text-gray-500">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#dc2626]"></span> Outros métodos
+            </span>
+            <span class="flex items-center gap-1.5 text-[#16a34a]">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#34C759]"></span> Adeus Papada (92%)
+            </span>
+          </div>
+
+          <!-- Exact SVG Chart -->
+          <div class="relative w-full aspect-[312/175] max-h-[175px] mx-auto">
+            <svg class="w-full h-full" viewBox="0 0 312 175" style="width: 100%; height: 100%;">
+              <!-- Grid lines -->
+              <g stroke="#AEAEAE" stroke-dasharray="3 3" opacity="0.6">
+                <line x1="8" y1="167" x2="304" y2="167"></line>
+                <line x1="8" y1="127.25" x2="304" y2="127.25"></line>
+                <line x1="8" y1="87.5" x2="304" y2="87.5"></line>
+                <line x1="8" y1="47.75" x2="304" y2="47.75"></line>
+                <line x1="8" y1="8" x2="304" y2="8"></line>
+
+                <line x1="8" y1="8" x2="8" y2="167"></line>
+                <line x1="156" y1="8" x2="156" y2="167"></line>
+                <line x1="304" y1="8" x2="304" y2="167"></line>
+              </g>
+
+              <!-- Adeus Papada Green Curve (Area + Line) -->
+              <path d="M8,151.1C57.333,147.655,106.667,144.21,156,122.48C205.333,100.75,254.667,60.735,304,20.72L304,167L8,167Z" fill="#34C759" opacity="0.15"></path>
+              <path d="M8,151.1C57.333,147.655,106.667,144.21,156,122.48C205.333,100.75,254.667,60.735,304,20.72" fill="none" stroke="#34C759" stroke-width="4" opacity="0.85"></path>
+              
+              <!-- Adeus Papada Dots with subtle static halo -->
+              <circle cx="8" cy="151.1" r="5" fill="#34C759" stroke="#34C759" stroke-opacity="0.25" stroke-width="8"></circle>
+              <circle cx="156" cy="122.48" r="5" fill="#34C759" stroke="#34C759" stroke-opacity="0.25" stroke-width="8"></circle>
+              <circle cx="304" cy="20.72" r="6" fill="#34C759" stroke="#34C759" stroke-opacity="0.25" stroke-width="10"></circle>
+
+              <!-- Red Line (Outros Métodos) -->
+              <path d="M8,128.84C57.333,127.25,106.667,125.66,156,122.48C205.333,119.3,254.667,114.53,304,109.76" fill="none" stroke="#dc2626" stroke-width="3"></path>
+              <circle cx="8" cy="128.84" r="5" fill="#dc2626" stroke="#dc2626" stroke-opacity="0.2" stroke-width="6"></circle>
+              <circle cx="156" cy="122.48" r="5" fill="#dc2626" stroke="#dc2626" stroke-opacity="0.2" stroke-width="6"></circle>
+              <circle cx="304" cy="109.76" r="5" fill="#dc2626" stroke="#dc2626" stroke-opacity="0.2" stroke-width="6"></circle>
+            </svg>
+          </div>
+          <div class="flex justify-between text-[11px] text-gray-400 font-medium px-2">
+            <span>Dia 1</span>
+            <span>Dia 7</span>
+            <span>Dia 15</span>
+          </div>
+        </div>
+
+        <!-- Green 3D Action Button with pulse wave -->
+        <div class="pt-2 pb-6">
+          <div class="relative w-full max-w-[28rem] mx-auto">
+            <div class="btn-pulse-wave absolute inset-0 w-full h-full bg-[#17a34a] rounded-xl pointer-events-none"></div>
+            <button onclick="goToNextStep()" type="button" class="btn-green-3d relative w-full py-4 px-6 text-white rounded-xl font-bold text-base flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+              <span>Continuar</span>
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 448 512">
+                <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 11: Criando seu Plano (Loading + Carrossel) -->
+    <!-- ========================================== -->
+    <div id="step-11" class="step-screen">
+      <div class="flex flex-col gap-6 text-center py-6">
+        <div>
+          <h2 class="text-2xl font-bold text-[#AF5655] leading-tight">
+            Criando seu plano personalizado...
+          </h2>
+          <p id="loading-status-text" class="text-xs text-gray-500 mt-2">
+            Entendendo o seu caso e adaptando a solução ideal...
+          </p>
+        </div>
+
+        <!-- Progress Counter -->
+        <div class="flex flex-col items-center justify-center my-2">
+          <div class="relative w-28 h-28 flex items-center justify-center">
+            <svg class="w-full h-full transform -rotate-90">
+              <circle cx="56" cy="56" r="46" stroke="#f3f4f6" stroke-width="8" fill="transparent"></circle>
+              <circle id="loading-circle" cx="56" cy="56" r="46" stroke="#AF5655" stroke-width="8" stroke-dasharray="289" stroke-dashoffset="289" stroke-linecap="round" fill="transparent" class="transition-all duration-300"></circle>
+            </svg>
+            <span id="loading-percent" class="absolute text-2xl font-extrabold text-[#1C1513]">0%</span>
+          </div>
+        </div>
+
+        <!-- Carousel of Results (dep1, dep2, dep3) -->
+        <div class="w-full bg-white rounded-2xl p-2 border border-gray-100 shadow-sm overflow-hidden">
+          <div id="carousel-container" class="relative w-full aspect-square rounded-xl overflow-hidden bg-neutral-50">
+            <img id="carousel-img" src="images/dep1.webp" loading="lazy" decoding="async" decoding="async" alt="Depoimento 1" class="w-full h-full object-cover transition-opacity duration-300">
+          </div>
+        </div>
+        
+        <p class="text-xs text-gray-400">Analisando padrão muscular e estimando tempo de resposta...</p>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 12: Resultados da Avaliação          -->
+    <!-- ========================================== -->
+    <div id="step-12" class="step-screen">
+      <div class="flex flex-col gap-6 text-center">
+        <!-- Title -->
+        <div>
+          <h1 class="text-2xl font-extrabold text-[#AF5655] leading-tight">
+            Resultados da sua avaliação
+          </h1>
+          <p class="text-sm text-gray-600 mt-1">
+            Com base nas suas respostas, aqui está o que identificamos:
+          </p>
+        </div>
+
+        <!-- Raio-X Image -->
+        <div class="w-full rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm p-1">
+          <img src="images/edOgb-raio-x-2.webp" loading="lazy" decoding="async" decoding="async" alt="Raio-X Muscular" class="w-full object-cover rounded-xl">
+        </div>
+
+        <!-- Metric: Nível de Papada -->
+        <div class="bg-white rounded-2xl p-4 border border-gray-200/80 shadow-sm text-left">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-sm font-bold text-gray-700">Nível de papada:</span>
+            <span class="text-lg font-extrabold text-[#AF5655]">77%</span>
+          </div>
+          <div class="w-full bg-gray-100 h-3 rounded-full overflow-hidden relative">
+            <div class="h-full bg-gradient-to-r from-amber-400 via-orange-500 to-[#AF5655] rounded-full" style="width: 77%;"></div>
+          </div>
+          <div class="flex justify-between text-[10px] text-gray-400 mt-1">
+            <span>Leve</span>
+            <span>Moderado</span>
+            <span class="font-bold text-[#AF5655]">Elevado</span>
+          </div>
+        </div>
+
+        <!-- Donut Chart: Indice Muscular vs Gordura -->
+        <div class="bg-white rounded-2xl p-5 border border-gray-200/80 shadow-sm text-center">
+          <h2 class="text-xl font-bold text-[#AF5655] leading-tight">
+            Índice Muscular vs. Gordura
+          </h2>
+          <p class="text-sm text-gray-600 mt-1 mb-4">
+            Sua papada é <span class="font-bold text-[#AF5655]">65%</span> tensão muscular / acúmulo postural e <span class="font-bold text-gray-800">35%</span> gordura
+          </p>
+
+          <!-- Donut SVG -->
+          <div class="relative w-40 h-40 mx-auto flex items-center justify-center">
+            <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+              <!-- Background / Gordura (35%) -->
+              <circle cx="50" cy="50" r="38" stroke="#71717A" stroke-width="14" fill="transparent" stroke-dasharray="238.7" stroke-dashoffset="0"></circle>
+              <!-- Tensão Muscular (65%) -->
+              <circle cx="50" cy="50" r="38" stroke="#AF5655" stroke-width="14" fill="transparent" stroke-dasharray="238.7" stroke-dashoffset="83.5" stroke-linecap="round"></circle>
+            </svg>
+            <div class="absolute flex flex-col items-center">
+              <span class="text-2xl font-black text-[#AF5655]">65%</span>
+              <span class="text-[10px] font-medium text-gray-500 uppercase tracking-wider">Muscular</span>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center gap-6 mt-4 text-xs font-semibold">
+            <span class="flex items-center gap-1.5 text-[#AF5655]">
+              <span class="w-3 h-3 rounded-full bg-[#AF5655]"></span> Tensão Muscular (65%)
+            </span>
+            <span class="flex items-center gap-1.5 text-gray-600">
+              <span class="w-3 h-3 rounded-full bg-[#71717A]"></span> Gordura (35%)
+            </span>
+          </div>
+        </div>
+
+        <!-- Alert Notification Card -->
+        <div class="bg-[#FFF8E7] border border-[#F3DE97] rounded-2xl p-4 text-left shadow-sm">
+          <p class="text-xs font-bold text-[#8A6310] flex items-center gap-1.5 mb-1">
+            <span>⚠️</span> Isso também pode estar influenciando nestes fatores:
+          </p>
+          <p class="text-sm font-semibold text-[#393232]">
+            A forma como você respira ou mastiga sem perceber.
+          </p>
+        </div>
+
+        <!-- Explanatory Text -->
+        <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm text-left">
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Mastigar ativa os músculos do pescoço até 200 vezes por refeição. Se você come rápido ou respira pela boca, a região da papada recebe até <strong>40% menos estímulo muscular por dia</strong> do que o ideal, facilitando o acúmulo de líquidos e flacidez.
+          </p>
+        </div>
+
+        <!-- Genética Box -->
+        <div class="bg-white rounded-2xl p-4 border border-gray-100 shadow-sm text-left">
+          <h3 class="text-base font-bold text-[#AF5655] mb-1">É genética?</h3>
+          <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+            Pode influenciar, mas não é toda a história. O músculo platisma e a musculatura da região submentoniana ainda podem ser fortalecidos e reeducados.
+          </p>
+        </div>
+
+        <!-- Arguments Comparison -->
+        <div class="flex flex-col gap-3">
+          <!-- Sinais ❌ -->
+          <div class="bg-red-50/60 border border-red-100 rounded-2xl p-4 text-left">
+            <h4 class="font-bold text-sm text-red-900 mb-2 flex items-center gap-1.5">
+              <span>⚠️</span> Principais sinais identificados:
+            </h4>
+            <div class="flex flex-col gap-1.5 text-xs text-red-800">
+              <p>❌ Inchaço ou sensação de peso embaixo do queixo</p>
+              <p>❌ A papada fica mais evidente ao abaixar a cabeça</p>
+              <p>❌ Uma bolsa bem delimitada na linha da mandíbula</p>
+            </div>
+          </div>
+
+          <!-- O Protocolo Ajudará ✅ -->
+          <div class="bg-emerald-50/70 border border-emerald-100 rounded-2xl p-4 text-left">
+            <h4 class="font-bold text-sm text-emerald-900 mb-2 flex items-center gap-1.5">
+              <span>✅</span> O protocolo ajudará a:
+            </h4>
+            <div class="flex flex-col gap-2 text-xs text-emerald-900">
+              <p>✅ <strong>Exercícios de tonificação postural</strong> que fortalecem esse músculo</p>
+              <p>✅ <strong>Ativação linfática diária</strong> que drena esse líquido acumulado</p>
+              <p>✅ <strong>Tonificação + estímulo ao colágeno</strong>, trabalhando a firmeza de dentro para fora</p>
+              <p>✅ <strong>Dedicar tempo específico</strong> a essa região, normalmente ignorada no skincare tradicional</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button CTA 1 (Green 3D with pulse wave) -->
+        <div>
+          <div class="relative w-full max-w-[28rem] mx-auto">
+            <div class="btn-pulse-wave absolute inset-0 w-full h-full bg-[#17a34a] rounded-xl pointer-events-none"></div>
+            <button onclick="goToVerificationStep()" type="button" class="btn-green-3d relative w-full py-4 px-6 text-white rounded-xl font-bold text-base flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+              <span>Desbloquear meu protocolo</span>
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 448 512">
+                <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Depoimento WhatsApp (dep-wpp-1.webp) -->
+        <div class="w-full rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm p-1">
+          <img src="images/dep-wpp-1.webp" loading="lazy" decoding="async" decoding="async" alt="Depoimento WhatsApp" class="w-full object-cover rounded-xl">
+        </div>
+
+        <!-- Before/After Image (antdps.webp) -->
+        <div class="w-full rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm p-1">
+          <img src="images/antdps.webp" loading="lazy" decoding="async" decoding="async" alt="Antes e Depois" class="w-full object-cover rounded-xl">
+        </div>
+
+        <!-- Closing pitch -->
+        <div>
+          <h3 class="text-base font-bold text-[#AF5655] leading-snug">
+            Por isso preparamos um plano pensado especificamente para o seu caso com o seu ritual próprio.
+          </h3>
+        </div>
+
+        <!-- Button CTA 2 (Green 3D with pulse wave) -->
+        <div class="pb-6">
+          <div class="relative w-full max-w-[28rem] mx-auto">
+            <div class="btn-pulse-wave absolute inset-0 w-full h-full bg-[#17a34a] rounded-xl pointer-events-none"></div>
+            <button onclick="goToVerificationStep()" type="button" class="btn-green-3d relative w-full py-4 px-6 text-white rounded-xl font-bold text-base flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+              <span>Desbloquear meu protocolo</span>
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 448 512">
+                <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+              </svg>
+            </button>
+          </div>
+          <p class="text-xs text-gray-500 mt-2 font-medium">
+            Seu Protocolo Adeus Papada de 15 dias, acesso imediato.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 13: Verificando Vagas (Loading 5s)   -->
+    <!-- ========================================== -->
+    <div id="step-13" class="step-screen">
+      <div class="flex flex-col items-center justify-center text-center py-16 gap-6">
+        <span class="text-4xl animate-bounce">⏳</span>
+        
+        <div>
+          <h3 class="text-xl font-bold text-[#AF5655] leading-tight">
+            Verificando se ainda temos vagas disponíveis...
+          </h3>
+          <p class="text-xs text-gray-400 mt-2">Aguarde alguns segundos...</p>
+        </div>
+
+        <!-- Smooth 5s progress bar -->
+        <div class="w-full max-w-xs bg-gray-200 h-2.5 rounded-full overflow-hidden relative">
+          <div id="verify-bar" class="h-full bg-[#AF5655] rounded-full transition-all duration-[5000ms] ease-linear" style="width: 0%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- STEP 14: VSL & Oferta Final               -->
+    <!-- ========================================== -->
+    <div id="step-14" class="step-screen">
+      <div class="flex flex-col gap-5 text-center">
+        <!-- VSL Headline -->
+        <div>
+          <h2 class="text-2xl sm:text-[26px] font-extrabold text-[#1C1513] leading-tight">
+            Você está a apenas <span class="bg-[#AF5655] text-white px-2 py-0.5 rounded-lg">15 dias</span> de uma nova versão de você.
+          </h2>
+          <p class="text-sm text-gray-600 mt-2">
+            Deixamos uma mensagem especial antes de começar. 👇
+          </p>
+        </div>
+
+        <!-- Video Player (Wistia Clean + Barra de Reprodução Inteligente) -->
+        <div class="w-full bg-black rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+          <div class="wistia_responsive_padding" style="padding:177.78% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="wistia_embed wistia_async_v4i1x3160k videoFoam=true playbar=false controlsVisibleOnLoad=false playButton=true smallPlayButton=false volumeControl=false fullscreenButton=false settingsControl=false qualityControl=false wistiaLogo=false" style="height:100%;position:relative;width:100%"></div>
+            </div>
+          </div>
+          <!-- Barra de Reprodução Inteligente -->
+          <div class="w-full bg-[#18181b] px-3 py-2 border-t border-white/10">
+            <div class="w-full bg-white/20 h-2 rounded-full overflow-hidden relative shadow-inner">
+              <div id="smart-progress-bar" class="h-full bg-gradient-to-r from-emerald-500 to-[#16a34a] rounded-full transition-all duration-300 ease-out shadow-sm" style="width: 0%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final CTA Button (Green 3D with pulse wave & 8s delay) -->
+        <div id="cta-button-container" class="pt-2 pb-8 opacity-0 pointer-events-none transition-opacity duration-700">
+          <div class="relative w-full max-w-[28rem] mx-auto">
+            <div class="btn-pulse-wave absolute inset-0 w-full h-full bg-[#17a34a] rounded-xl pointer-events-none"></div>
+            <a id="checkout-link" href="https://pay.wiapy.com/6ae51f096065182966fb6cb8" target="_blank" rel="noopener noreferrer" class="btn-green-3d relative w-full py-4 px-6 text-white rounded-xl font-bold text-base flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+              <span>Sim, quero começar meu protocolo</span>
+              <svg fill="currentColor" width="16" height="16" viewBox="0 0 448 512">
+                <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+              </svg>
+            </a>
+            <a id="checkout-discount-link" href="https://pay.wiapy.com/WMS0Y8_wUu-" target="_blank" rel="noopener noreferrer" class="block mt-4 text-center text-sm font-bold text-[#AF5655] underline">
+              Acessar opção de R$ 14,90
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Exit Intent Modal (Mid-Quiz Retention - Instant Zero-Delay Display) -->
+  <div id="exit-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/50">
+    <div id="exit-modal-card" class="bg-white rounded-3xl p-6 max-w-sm w-full mx-auto text-center shadow-2xl border border-gray-100 flex flex-col gap-4 animate-none">
+      <div class="w-14 h-14 bg-amber-50 border border-amber-200 rounded-full flex items-center justify-center mx-auto text-3xl animate-bounce">
+        ⚠️
+      </div>
+      <div>
+        <h3 class="text-xl font-extrabold text-[#1C1513] leading-tight tracking-tight">
+          NÃO SAIA AGORA!
+        </h3>
+        <p class="text-xs font-bold text-[#AF5655] uppercase tracking-wider mt-1">
+          Falta pouco para terminar!
+        </p>
+        <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+          Menos de <strong>15 segundos</strong> para finalizar o teste e receber seu protocolo personalizado.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-2.5 pt-1">
+        <!-- Botão principal chamativo (Verde 3D com pulso) -->
+        <div class="relative w-full">
+          <div class="btn-pulse-wave absolute inset-0 w-full h-full bg-[#17a34a] rounded-xl pointer-events-none"></div>
+          <button onclick="closeExitModal()" type="button" class="btn-green-3d relative w-full py-4 px-4 text-white rounded-xl font-bold text-base flex items-center justify-center gap-2 cursor-pointer shadow-md">
+            <span>CONTINUAR PROTOCOLO</span>
+            <svg fill="currentColor" width="16" height="16" viewBox="0 0 448 512">
+              <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <a href="https://pay.wiapy.com/WMS0Y8_wUu-" target="_blank" rel="noopener noreferrer" class="block w-full py-3 px-4 rounded-xl border border-[#AF5655] text-[#AF5655] font-semibold text-sm text-center">
+          Ver oferta de R$ 14,90
+        </a>
+
+        <!-- Botão secundário: Ir direto para VSL -->
+        <button onclick="skipToVslFromModal()" type="button" class="w-full py-3 px-4 rounded-xl border border-gray-200 text-gray-700 font-semibold text-xs hover:bg-gray-50 hover:text-[#AF5655] transition-colors">
+          Quero receber agora
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Funnel JavaScript Logic -->
+  <script>
+    let currentStep = 1;
+    const totalSteps = 14;
+    const userAnswers = {};
+    let step11Timer = null;
+    let carouselInterval = null;
+
+    // Carousel images list (dep1, dep2, dep3) - optimized WebP
+    const carouselImages = [
+      'images/dep1.webp',
+      'images/dep-wpp-1.webp',
+      'images/antdps.webp'
+    ];
+    let currentCarouselIndex = 0;
+    let step14Revealed = false;
+    let step14Timer = null;
+    let wistiaSdkLoaded = false;
+
+    // Load Wistia SDK dynamically when nearing VSL (Step 9+) to save 300KB+ on initial connect
+    function loadWistiaSdk() {
+      if (wistiaSdkLoaded) return;
+      wistiaSdkLoaded = true;
+      const s = document.createElement('script');
+      s.src = 'https://fast.wistia.net/assets/external/E-v1.js';
+      s.async = true;
+      document.head.appendChild(s);
+    }
+
+    // Intelligent prefetching: loads images for the next steps in the background only when needed
+    function prefetchNextStepAssets(step) {
+      if (step === 2) {
+        ['images/8gs7z-ppd1.webp', 'images/rusSg-ppd2.webp', 'images/o6kk9-ppd3.webp', 'images/Nar9b-ppd4.webp'].forEach(src => {
+          const img = new Image(); img.src = src;
+        });
+      } else if (step === 4) {
+        ['images/VKcx7-0.webp', 'images/IbC2R-1.webp', 'images/tVF5j-2.webp', 'images/r0QwL-3.webp'].forEach(src => {
+          const img = new Image(); img.src = src;
+        });
+      } else if (step === 8 || step === 9) {
+        const img = new Image(); img.src = 'images/7cdCx-metodo.webp';
+        loadWistiaSdk();
+      } else if (step === 10) {
+        carouselImages.forEach(src => {
+          const img = new Image(); img.src = src;
+        });
+        loadWistiaSdk();
+      } else if (step === 11) {
+        const i1 = new Image(); i1.src = 'images/edOgb-raio-x-2.webp';
+        const i2 = new Image(); i2.src = 'images/dep-wpp-1.webp';
+        const i3 = new Image(); i3.src = 'images/antdps.webp';
+        loadWistiaSdk();
+      }
+    }
+
+    function updateNavUI() {
+      const backBtn = document.getElementById('back-btn');
+      const progressContainer = document.getElementById('progress-container');
+      const progressBar = document.getElementById('progress-bar');
+
+      // Top nav adjustments
+      if (currentStep === 1) {
+        backBtn.classList.add('invisible');
+        progressContainer.classList.add('hidden');
+      } else {
+        backBtn.classList.remove('invisible');
+        progressContainer.classList.remove('hidden');
+      }
+
+      // Progress bar percentage (from step 2 to step 14)
+      const progressPct = Math.min(100, Math.round(((currentStep - 1) / (totalSteps - 1)) * 100));
+      progressBar.style.width = progressPct + '%';
+
+      // Forçar scroll para o topo imediatamente
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
+
+    let isTransitioning = false;
+
+    function showStep(stepNumber) {
+
+      // Lock interaction during step switch to prevent ghost clicks on mobile
+      isTransitioning = true;
+
+      // Forçar scroll para o topo imediatamente ao trocar de etapa
+      window.scrollTo(0, 0);
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+
+      // Hide all steps
+      for (let i = 1; i <= totalSteps; i++) {
+        const stepEl = document.getElementById(`step-${i}`);
+        if (stepEl) {
+          stepEl.classList.remove('active');
+          stepEl.classList.remove('pointer-events-none');
+        }
+      }
+
+      currentStep = stepNumber;
+      const targetStepEl = document.getElementById(`step-${currentStep}`);
+      if (targetStepEl) {
+        // Ensure new step starts completely fresh (no ghost .selected cards from previous steps)
+        if (currentStep !== 7) {
+          targetStepEl.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+        }
+
+        // Temporarily disable pointer events for 300ms to discard any mobile touch/click bleed-through
+        targetStepEl.classList.add('pointer-events-none');
+        targetStepEl.classList.add('active');
+
+        // Re-garantir scroll no topo após a nova etapa ser montada no DOM
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        requestAnimationFrame(() => {
+          window.scrollTo(0, 0);
+          document.documentElement.scrollTop = 0;
+          document.body.scrollTop = 0;
+        });
+
+        setTimeout(() => {
+          targetStepEl.classList.remove('pointer-events-none');
+          isTransitioning = false;
+        }, 300);
+      } else {
+        isTransitioning = false;
+      }
+
+      updateNavUI();
+      prefetchNextStepAssets(stepNumber);
+
+      // Trigger step-specific logic
+      if (currentStep === 11) {
+        startStep11Loading();
+      } else if (currentStep === 13) {
+        startStep13Verification();
+      } else if (currentStep === 14) {
+        loadWistiaSdk();
+        startStep14Delay();
+        setTimeout(function () {
+          window.dispatchEvent(new Event('resize'));
+          if (window.Wistia && window.Wistia.api) {
+            const v = window.Wistia.api('v4i1x3160k');
+            if (v && v.videoFoam && typeof v.videoFoam.fit === 'function') {
+              v.videoFoam.fit();
+            }
+          }
+        }, 60);
+      }
+    }
+
+    // Step 14 Delay: The button appears permanently after 8s in Step 14
+    function startStep14Delay() {
+      const cta = document.getElementById('cta-button-container');
+      if (!cta) return;
+      
+      // If already revealed once, keep it visible permanently
+      if (step14Revealed) {
+        cta.classList.remove('opacity-0', 'pointer-events-none');
+        cta.classList.add('opacity-100');
+        return;
+      }
+
+      if (step14Timer) clearTimeout(step14Timer);
+      cta.classList.add('opacity-0', 'pointer-events-none');
+      cta.classList.remove('opacity-100');
+
+      step14Timer = setTimeout(() => {
+        step14Revealed = true;
+        cta.classList.remove('opacity-0', 'pointer-events-none');
+        cta.classList.add('opacity-100');
+      }, 8000);
+    }
+
+    function goToNextStep() {
+      if (currentStep < totalSteps) {
+        showStep(currentStep + 1);
+      }
+    }
+
+    function goToPreviousStep() {
+      if (isTransitioning) return;
+      // Ao tentar voltar no quiz, abre o modal de retenção de forma 100% instantânea
+      openExitModal();
+    }
+
+    // Single option selection with smooth delay & ghost-click protection
+    function selectOption(el, stepNum) {
+      // Ignore click if already transitioning or if click was from a mismatched step
+      if (isTransitioning) return;
+      if (stepNum !== currentStep) return;
+
+      isTransitioning = true;
+
+      // Find parent options container and remove selected from siblings
+      const parent = el.parentElement;
+      const siblings = parent.querySelectorAll('.option-card');
+      siblings.forEach(s => s.classList.remove('selected'));
+
+      // Mark this option selected
+      el.classList.add('selected');
+
+      // Capture option text for analytics tracker
+      const textEl = el.querySelector('p');
+      let chosenText = textEl ? textEl.innerText.trim() : el.innerText.trim();
+      if (!chosenText) {
+        const img = el.querySelector('img');
+        if (img) chosenText = img.getAttribute('alt') || `Opção ${stepNum}`;
+      }
+      userAnswers[stepNum] = chosenText;
+
+      // Auto advance after 280ms
+      setTimeout(() => {
+        goToNextStep();
+      }, 280);
+    }
+
+    // Step 7: Multiple selection
+    function toggleMultiOption(el) {
+      // Uncheck "nenhuma" if selecting another
+      const noneOpt = document.querySelector('[data-value="nenhuma"]');
+      if (noneOpt && noneOpt.classList.contains('selected')) {
+        noneOpt.classList.remove('selected');
+        const indicator = noneOpt.querySelector('.checkbox-indicator');
+        indicator.innerHTML = '';
+        indicator.classList.remove('bg-white', 'text-[#AF5655]');
+      }
+
+      el.classList.toggle('selected');
+      const indicator = el.querySelector('.checkbox-indicator');
+      if (el.classList.contains('selected')) {
+        indicator.innerHTML = '✓';
+        indicator.classList.add('bg-white', 'text-[#AF5655]', 'font-bold', 'text-xs');
+      } else {
+        indicator.innerHTML = '';
+        indicator.classList.remove('bg-white', 'text-[#AF5655]', 'font-bold', 'text-xs');
+      }
+    }
+
+    function toggleNoneOption(el) {
+      // Clear other multi options
+      const otherOpts = document.querySelectorAll('.multi-option:not([data-value="nenhuma"])');
+      otherOpts.forEach(o => {
+        o.classList.remove('selected');
+        const indicator = o.querySelector('.checkbox-indicator');
+        indicator.innerHTML = '';
+        indicator.classList.remove('bg-white', 'text-[#AF5655]', 'font-bold', 'text-xs');
+      });
+
+      el.classList.toggle('selected');
+      const indicator = el.querySelector('.checkbox-indicator');
+      if (el.classList.contains('selected')) {
+        indicator.innerHTML = '✓';
+        indicator.classList.add('bg-white', 'text-[#AF5655]', 'font-bold', 'text-xs');
+      } else {
+        indicator.innerHTML = '';
+        indicator.classList.remove('bg-white', 'text-[#AF5655]', 'font-bold', 'text-xs');
+      }
+    }
+
+    // Step 11: Loading animation and synchronized carousel (each image 33% of step time)
+    function startStep11Loading() {
+      let percent = 0;
+      const percentEl = document.getElementById('loading-percent');
+      const circleEl = document.getElementById('loading-circle');
+      const statusText = document.getElementById('loading-status-text');
+      const carouselImg = document.getElementById('carousel-img');
+
+      // Reset
+      percentEl.innerText = '0%';
+      circleEl.style.strokeDashoffset = '289';
+      currentCarouselIndex = 0;
+      if (carouselImg) {
+        carouselImg.src = carouselImages[0];
+        carouselImg.style.opacity = '1';
+      }
+
+      const totalDuration = 7000; // 7 seconds
+      const intervalTime = 50;
+      const stepIncrement = 100 / (totalDuration / intervalTime);
+
+      if (step11Timer) clearInterval(step11Timer);
+      step11Timer = setInterval(() => {
+        percent += stepIncrement;
+        if (percent >= 100) {
+          percent = 100;
+          clearInterval(step11Timer);
+          setTimeout(() => {
+            showStep(12);
+          }, 400);
+        }
+
+        const rounded = Math.round(percent);
+        percentEl.innerText = rounded + '%';
+        const offset = 289 - (289 * (percent / 100));
+        circleEl.style.strokeDashoffset = offset;
+
+        // Switch image precisely at 33.33% and 66.66% marks (each shown for 33.33% of total step duration)
+        let targetIndex = 0;
+        if (percent >= 66.66) {
+          targetIndex = 2;
+        } else if (percent >= 33.33) {
+          targetIndex = 1;
+        }
+
+        if (targetIndex !== currentCarouselIndex && carouselImg) {
+          currentCarouselIndex = targetIndex;
+          carouselImg.style.opacity = '0';
+          setTimeout(() => {
+            carouselImg.src = carouselImages[currentCarouselIndex];
+            carouselImg.style.opacity = '1';
+          }, 150);
+        }
+
+        if (percent > 45 && percent < 80) {
+          statusText.innerText = 'Adaptando a frequência de ativação muscular ao seu perfil...';
+        } else if (percent >= 80) {
+          statusText.innerText = 'Finalizando a personalização dos seus 15 dias...';
+        }
+      }, intervalTime);
+    }
+
+    // Step 12 to Step 13
+    function goToVerificationStep() {
+      showStep(13);
+    }
+
+    // Step 13: 5-second check
+    function startStep13Verification() {
+      const verifyBar = document.getElementById('verify-bar');
+      verifyBar.style.width = '0%';
+      setTimeout(() => {
+        verifyBar.style.width = '100%';
+      }, 50);
+
+      setTimeout(() => {
+        showStep(14);
+      }, 5100);
+    }
+
+    // Barra de Reprodução Inteligente:
+    // 1. Primeiros 45 segundos: avança muito rápido (0s a 45s -> 0% a 58%)
+    // 2. Meio: avança com ritmo contínuo (45s a totalDuration - 60s -> 58% a 89%)
+    // 3. Último minuto: avança mais devagar (últimos 60s -> 89% a 99.5%)
+    function calculateSmartProgress(time, totalDuration) {
+      if (time <= 0) return 0;
+      if (time >= totalDuration) return 100;
+      const lastMinStart = Math.max(totalDuration - 60.0, 45.0);
+
+      // Fase 1: Primeiros 45 segundos (avança muito rápido)
+      if (time < 45.0) {
+        const ratio = time / 45.0;
+        return 58.0 * (1.0 - Math.pow(1.0 - ratio, 1.4));
+      }
+      // Fase 2: Meio (ritmo consistente e constante)
+      else if (time < lastMinStart) {
+        const ratio = (time - 45.0) / (lastMinStart - 45.0);
+        return 58.0 + (89.0 - 58.0) * ratio;
+      }
+      // Fase 3: Último minuto (avança devagar)
+      else {
+        const ratio = (time - lastMinStart) / (totalDuration - lastMinStart);
+        return 89.0 + (99.5 - 89.0) * Math.pow(ratio, 0.75);
+      }
+    }
+
+    // Integração Wistia Player
+    window._wq = window._wq || [];
+    _wq.push({ id: "v4i1x3160k", onReady: function(video) {
+      window.vslVideo = video;
+      const bar = document.getElementById("smart-progress-bar");
+      const total = video.duration() || 307.467;
+
+      video.bind("timechange", function(t) {
+        if (bar) {
+          const pct = calculateSmartProgress(t, total);
+          bar.style.width = pct.toFixed(1) + "%";
+        }
+      });
+
+      video.bind("end", function() {
+        if (bar) bar.style.width = "100%";
+      });
+    }});
+
+    // ==========================================
+    // Exit-intent: apenas modal, sem bloquear o botão Voltar do navegador
+    let exitModalOpen = false;
+
+    function openExitModal() {
+      exitModalOpen = true;
+      const modal = document.getElementById('exit-modal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeExitModal() {
+      exitModalOpen = false;
+      const modal = document.getElementById('exit-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function skipToVslFromModal() {
+      closeExitModal();
+      showStep(14);
+    }
+
+    // Desktop Exit Intent: cursor saindo pelo topo da página
+    document.addEventListener('mouseleave', function (e) {
+      if (e.clientY <= 10 && !exitModalOpen) {
+        if (currentStep < 14) {
+          openExitModal();
+        }
+        else if (currentStep === 14) {
+          openExitModal();
+        }
+      }
+    });
+  </script>
+
+
+</body></html>
